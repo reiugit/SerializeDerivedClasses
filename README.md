@@ -1,6 +1,6 @@
 # SerializeDerivedClasses
 
-##Polymorphic serialization and deserialization
+## Polymorphic serialization and deserialization
 
 using attribute "JsonDerivedType" with typeDiscriminator
 
