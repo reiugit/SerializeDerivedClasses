@@ -11,8 +11,9 @@ var PolymorphicBaseClass = JsonSerializer.Deserialize<BaseClass>(polymorphicJson
 
 Console.WriteLine(polymorphicJson);
 
-Console.WriteLine($"Polymorphic deserialization as: {PolymorphicBaseClass?.GetType()}");
-Console.WriteLine();
-Console.WriteLine($"BaseClass is DerivedClass: {PolymorphicBaseClass is DerivedClass}");
+Console.WriteLine($"\nPolymorphic deserialization as: {PolymorphicBaseClass?.GetType()}");
+Console.WriteLine($"\nPolymorphic BaseClass is deserialized as DerivedClass: {PolymorphicBaseClass is DerivedClass}");
 
 
+Console.WriteLine("\n\nPress any key to exit.");
+Console.ReadKey(true);
